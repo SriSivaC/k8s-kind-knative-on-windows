@@ -1,7 +1,9 @@
 # Prerequesites
 
 [golang] (https://golang.org/dl/)
+
 [Windows Subsystem for Linux] (https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+
 [Docker Desktop with WSL] (https://docs.docker.com/docker-for-windows/wsl/)
 
 
