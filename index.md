@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
+# Prerequesites
 
-You can use the [editor on GitHub](https://github.com/SriSivaC/k8s-kind-knative-on-windows/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+[golang] (https://golang.org/dl/)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[Windows Subsystem for Linux] (https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
-### Markdown
+[Docker Desktop with WSL] (https://docs.docker.com/docker-for-windows/wsl/)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+##### Step 1
+use install-kind.ps1 to install kind executable
+add GOPATH to PATH environment variable which is usually, C:\Users\$env:USERNAME\go\bin
+##### step 2
+install kubectl following official guide from kubernetes
 
-# Header 1
-## Header 2
-### Header 3
+install helm from official helm page ( usually zip file release containing .exe)
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SriSivaC/k8s-kind-knative-on-windows/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+place the exe files in a location and add them to PATH environment variable
+##### step 3
+build kind client using build-kind-client.ps1
+##### step 4
+install knative install-kind-knative.ps1
+##### step 5
+install knative serving kind-knative-serving-setup.ps1
+##### step 6
+install knative eventing kind-knative-eventing-setup.ps1
