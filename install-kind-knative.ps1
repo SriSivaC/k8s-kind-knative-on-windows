@@ -1,0 +1,1 @@
+kind create cluster --name knative --config=./install-kind-knative.yaml
